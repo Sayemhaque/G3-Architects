@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -16,12 +16,7 @@
     width: 100%;
     height: 100%;
   }
-  body{
-    background-color: #f5f4f4;
-  }
-  hr{
-    border: 1px solid rgb(231, 229, 229);
-  }
+  
   
   /*-----------------------------
          container style
@@ -118,10 +113,73 @@
 
  .feature-description{
     color: rgb(172, 169, 169);
-    font: 10px;
     margin-top: 10px;
+    text-align: justify;
  }
 
+ .lovely-feature{
+  padding: 60px 0;
+ }
+ 
+ .feature-two{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+ }
+
+ .feture-title-two{
+  font-size: 30px;
+  padding-left: 10px;
+  border-left: 3px solid #ff900e;
+ }
+
+ .feature-description-two{
+  margin: 25px 0;
+  color: gray;
+ }
+
+ .more-features{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+ }
+ .more-feature{
+  background-color: #ffffff;
+  box-shadow: 5px 3px 8px 5px rgb(241, 239, 239);
+  padding: 10px 20px;
+ }
+
+ .more-feature-title{
+  font-size: 20px;
+  margin-bottom: 10px;
+  ;
+ }
+
+ .more-feature-description{
+  font-size: 15px;
+  color: gray;
+ }
+ .feature-img {
+  position:relative;
+ }
+ .experience{
+  padding: 30px;
+  background-color: #ff900e;
+  position: absolute;
+  left: -30px;
+  bottom: -50px;
+  border-radius: 8px;
+  text-align: center;
+ }
+ 
+ .experience-title{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+ }
+ .experience-subtitle{
+  color: white;
+ } 
   /* --------------------------
         Responsive styles 
   ------------------------------*/
@@ -145,13 +203,19 @@
        flex-direction: column;
      }
      .feature-imgs{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 20px;
      }
      .feature-info{
         width: 100%;
         text-align: center;
      }
+     .feature-two{
+      flex-direction: column;
+     }
+     .feature-title{
+      font-size: 30px;
+   }
 }
 
 
@@ -170,4 +234,7 @@
          width: 100%;
          text-align: center;
       }
+      .feature-two{
+        flex-direction: column;
+       }
 }
