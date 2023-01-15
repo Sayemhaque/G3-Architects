@@ -247,7 +247,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 80px;
  }
 
  .sponsors img{
@@ -257,6 +257,11 @@
  filter: grayscale(100%);
  }
 
+ footer  p{
+  background-color: #FFF4E7;
+  text-align: center;
+  padding: 20px 0;
+ }
   /* --------------------------
         Responsive styles 
   ------------------------------*/
@@ -306,6 +311,7 @@
    }
 }
 
+ 
 
 /* tablet responsive */
 
